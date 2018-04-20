@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 from bsmsg import VERSION
 
 
@@ -12,5 +12,6 @@ setup(
     url = 'https://github.com/lzantal/bsmsg',
     license = 'MIT',
     platforms = ['any'],
+    packages = find_packages(),
     include_package_data = True,
 )
