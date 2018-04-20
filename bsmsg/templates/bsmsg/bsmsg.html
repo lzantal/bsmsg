@@ -1,0 +1,14 @@
+<!-- custom messages -->
+{% if messages %}
+<div class="container-fluid" id="bsmsg">
+{% for msg in messages %}
+<div class="alert {{msg.tags}} alert-dismissible" role="alert">
+    {{msg}}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+{% endfor %}
+</div><!-- ./message container -->
+{% endif %}
+<!-- end -->
