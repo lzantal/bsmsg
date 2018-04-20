@@ -1,4 +1,4 @@
-VERSION = '0.1.0'
+VERSION = '0.1.2'
 # overwrite built in message tags to use bootstrap classes
 from django.contrib.messages import constants as msg_const
 
