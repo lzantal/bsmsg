@@ -6,8 +6,6 @@ Install it using pip
 ```
 pip install git+https://github.com/lzantal/bsmsg.git
 ```
-
-## Usage
 Add bsmsg to your INSTALLED_APPS in settings.py
 ```
 INSTALLED_APPS = (
@@ -22,6 +20,7 @@ INSTALLED_APPS = (
 )
 ```
 
+## Usage
 Load the bsmsg template tag in your html file Eg: base.html
 ```
 {% load bsmsg %}
@@ -29,6 +28,17 @@ Load the bsmsg template tag in your html file Eg: base.html
 Then add it to your template
 ```
 {% bsmsg %}
+```
+
+In your project import messages and call any of the functions to create a new message
+```
+from django.contrib import messages
+
+messages.success(request, 'bsmsg Success Message')
+messages.info(request, 'bsmsg Info Message')
+messages.warning(request, 'bsmsg Warning Message')
+messages.error(request, 'bsmsg Error Message')
+messages.debug(request, 'bsmsg Debug Message')
 ```
 
 ## Optional
