@@ -48,5 +48,8 @@ Include the bsmsg.css file to center text, make it bolder and larger
 ```
 
 ## Custom Styles
-message boxes wrapped around with a div using the ID **#bsmsg**  
+Message boxes wrapped around with a div using the ID **#bsmsg**  
 Use it to over write any other styles
+
+## Screenshot
+![Screenshot](screenshots/screenshot.png)
